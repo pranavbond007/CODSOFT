@@ -1,0 +1,33 @@
+# include <iostream>
+# include<ctime>
+# include<cstdlib>
+
+using namespace std;
+int main()
+
+{
+srand(static_cast<unsigned int>(time(0)));
+int random_no=rand()%1000+1;
+int guess=0;
+cout<<"Guess any number between 1 to 1000:"<<endl;
+
+cin>>guess;
+if(guess<random_no)
+{
+cout<<"Guess is too low";
+}
+else if(guess>random_no)
+{
+cout<<"Guess is too high"<<endl;
+
+}
+else
+{
+cout<<"Congratulations, You have guessed the number"<<endl;
+}
+
+
+return 0;
+
+
+}
