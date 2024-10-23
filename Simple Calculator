@@ -1,0 +1,43 @@
+# include <iostream>
+using namespace std;
+int main(){
+double n1;
+double n2;
+char operation;
+double result;
+cout<<"Enter the first number:";
+cin>>n1;
+cout<<"Enter the second number:";
+cin>>n2;
+cout<<"Which operation to perform:";
+cin>>operation;
+switch(operation)
+{
+
+case'-':
+result=n1-n2;
+cout<<n1<<"-"<<n2<<"="<<result<<endl;
+break;
+case'+':
+result=n1+n2;
+cout<<n1<<"+"<<n2<<"="<<result<<endl;
+break;
+case'*':
+result=n1*n2;
+cout<<n1<<"*"<<n2<<"="<<result<<endl;
+break;
+case'/':
+  if(n2!=0)
+{
+result=n1/n2;
+cout<<n1<<"/"<<n2<<"="<<result<<endl;}
+else
+{cout << "Cannot divide by zero!" << endl;}
+break;
+default:
+cout<<"Invalid operation"<<endl;
+break;
+}
+return 0;
+
+}
